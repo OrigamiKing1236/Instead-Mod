@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_column",
+    "textures": {
+      "end": "instead:block/dead_grass_top",
+      "side": "instead:block/dead_grass_side"
+    }
+  }

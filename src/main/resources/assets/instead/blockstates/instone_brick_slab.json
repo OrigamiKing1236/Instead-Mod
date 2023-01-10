@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "instead:block/instone_brick_slab"
+        },
+        "type=double": {
+            "model":"instead:block/instone_bricks"
+        },
+        "type=top": {
+            "model": "instead:block/instone_brick_slab_top"
+        }
+    }
+}

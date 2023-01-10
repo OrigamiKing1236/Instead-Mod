@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "instead:block/inwood_stem_top",
+    "side": "instead:block/inwood_stem"
+  }
+}

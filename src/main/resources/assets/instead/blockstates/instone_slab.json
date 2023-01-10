@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "instead:block/instone_slab"
+        },
+        "type=double": {
+            "model":"instead:block/instone"
+        },
+        "type=top": {
+            "model": "instead:block/instone_slab_top"
+        }
+    }
+}

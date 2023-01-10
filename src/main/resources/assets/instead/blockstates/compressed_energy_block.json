@@ -1,0 +1,5 @@
+{
+    "variants": {
+      "": { "model": "instead:block/compressed_energy_block" }
+    }
+  }

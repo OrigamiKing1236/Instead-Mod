@@ -1,0 +1,21 @@
+{
+    "variants": {
+      "": [
+        {
+          "model": "instead:block/dead_grass"
+        },
+        {
+          "model": "instead:block/dead_grass",
+          "y": 90
+        },
+        {
+          "model": "instead:block/dead_grass",
+          "y": 180
+        },
+        {
+          "model": "instead:block/dead_grass",
+          "y": 270
+        }
+      ]
+    }
+  }

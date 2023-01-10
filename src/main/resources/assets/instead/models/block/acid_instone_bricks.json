@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+      "all": "instead:block/acid_instone_bricks"
+    }
+  }

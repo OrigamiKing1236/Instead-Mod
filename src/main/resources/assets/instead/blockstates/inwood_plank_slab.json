@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "instead:block/inwood_plank_slab"
+        },
+        "type=double": {
+            "model":"instead:block/inwood_planks"
+        },
+        "type=top": {
+            "model": "instead:block/inwood_plank_slab_top"
+        }
+    }
+}

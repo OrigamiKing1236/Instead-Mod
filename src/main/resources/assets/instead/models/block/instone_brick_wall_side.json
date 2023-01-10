@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/template_wall_side",
+    "textures": {
+      "wall": "instead:block/instone_brick_block"
+    }
+  }

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "instead:block/petrified_log_top",
+    "side": "instead:block/petrified_log"
+  }
+}

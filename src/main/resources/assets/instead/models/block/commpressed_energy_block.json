@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+      "all": "instead:block/commpressed_energy_block"
+    }
+  }

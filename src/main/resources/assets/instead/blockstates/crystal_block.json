@@ -1,0 +1,5 @@
+{
+    "variants": {
+      "": { "model": "instead:block/crystal_block" }
+    }
+  }

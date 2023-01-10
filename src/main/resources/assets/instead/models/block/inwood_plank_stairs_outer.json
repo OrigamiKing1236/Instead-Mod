@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/outer_stairs",
+    "textures": {
+      "bottom": "instead:block/inwood_planks",
+      "top": "instead:block/inwood_planks",
+      "side": "instead:block/inwood_planks"
+    }
+  }
