@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "fools_gold_ingot",
+  "ingredient": {
+    "item": "instead:raw_fools_gold"
+  },
+  "result": "instead:fools_gold_ingot"
+}

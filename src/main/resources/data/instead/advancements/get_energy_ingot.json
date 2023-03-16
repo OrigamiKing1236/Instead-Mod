@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "item": "instead:energy_ingot"
+      },
+      "title": "Energy Ingot",
+      "description": "Get an energy ingot",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "instead:instead",
+    "criteria": {
+      "requirements": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "instead:energy_ingot"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+  

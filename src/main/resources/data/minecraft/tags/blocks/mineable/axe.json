@@ -1,0 +1,19 @@
+{
+    "replace": false,
+    "values": [
+        "instead:inwood_stem",
+        "instead:inwood_wood",
+        "instead:inwood_plate",
+        "instead:inwood_button",
+        "instead:inwood_fence_gate",
+        "instead:inwood_fence",
+        "instead:inwood_plank_slab",
+        "instead:inwood_plank_stair",
+        "instead:inwood_plate",
+        "instead:stripped_inwood_stem",
+        "instead:stripped_inwood_wood",
+        "instead:inwood_planks",
+        "instead:inwood_leaves",
+        "instead:inwood_button"
+    ]
+}

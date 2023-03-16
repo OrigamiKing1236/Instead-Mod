@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "instead:energy_ingot"
+    }
+  },
+  "result": {
+    "item": "instead:energy_block",
+    "count": 1
+  }
+}

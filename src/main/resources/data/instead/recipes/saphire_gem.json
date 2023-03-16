@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item":"instead:saphire_block"
+        }
+    ],
+    "result": {
+        "item": "instead:saphire_gem",
+        "count": 9
+    }
+}

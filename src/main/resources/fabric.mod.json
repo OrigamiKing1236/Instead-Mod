@@ -3,7 +3,7 @@
 	"id": "instead",
 	"version": "${version}",
 	"name": "Instead",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A dimension mod",
 	"authors": [
 		"OrigamiKing3612",
 		"OrigamiKing1236"
@@ -17,23 +17,21 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.origamiking.mcmods.Insteadmain"
+			"net.origamiking.mcmods.instead.Insteadmain"
 		],
 		"fabric-datagen": [
-			"net.origamiking.mcmods.datagen.ModDataGeneration"
+			"net.origamiking.mcmods.instead.datagen.ModDataGeneration"
 		],
 		"client": [
-			"net.origamiking.mcmods.InsteadClient"
+			"net.origamiking.mcmods.instead.InsteadClient"
 		]
 	},
-	"mixins": [
-		"instead.mixins.json"
-	],
 	"depends": {
 		"fabricloader": ">=0.14.12",
 		"minecraft": "~1.19.3",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"origamikings-api": "*"
 	},
 	"suggests": {
 		"another-mod": "*"

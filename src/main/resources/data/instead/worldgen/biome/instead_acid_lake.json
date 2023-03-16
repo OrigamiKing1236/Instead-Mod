@@ -1,0 +1,31 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "precipitation": "none",
+  "temperature_modifier": "frozen",
+  "effects": {
+    "sky_color": 1668352,
+    "fog_color": 1789184,
+    "water_color": 1394432,
+    "water_fog_color": 930560,
+    "grass_color": 0,
+    "foliage_color": 0
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "instead:saphither",
+        "weight": 3,
+        "minCount": 1,
+        "maxCount": 10
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "liquid": [
+      "minecraft:cave"
+    ]
+  },
+  "features": []
+}
