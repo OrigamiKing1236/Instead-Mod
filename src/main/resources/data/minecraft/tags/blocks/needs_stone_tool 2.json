@@ -1,0 +1,20 @@
+{
+    "replace": false,
+    "values": [
+        "instead:fools_gold_ore",
+        "instead:fools_gold_block",
+        "instead:raw_fools_gold_block",
+        "instead:inwood_stem",
+        "instead:inwood_wood",
+        "instead:crystal_block",
+        "instead:stripped_inwood_stem",
+        "instead:stripped_inwood_wood",
+        "instead:inwood_planks",
+        "instead:inwood_button",
+        "instead:dead_grass",
+        "instead:petrified_log",
+        "instead:petrified_wood",
+        "instead:stripped_petrified_log",
+        "instead:stripped_petrified_wood"
+    ]
+}

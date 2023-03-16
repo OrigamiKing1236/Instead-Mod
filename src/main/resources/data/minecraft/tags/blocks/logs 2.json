@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        "instead:inwood_stem",
+        "instead:inwood_wood",
+        "instead:stripped_inwood_stem",
+        "instead:stripped_inwood_wood",
+        "instead:petrified_log",
+        "instead:petrified_wood",
+        "instead:stripped_petrified_log",
+        "instead:stripped_petrified_wood"
+    ]
+}

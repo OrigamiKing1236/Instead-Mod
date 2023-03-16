@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "instead:instone_energy_ore",
+        "instead:stone_energy_ore",
+        "instead:deepslate_energy_ore",
+        "instead:energy_block",
+        "instead:compressed_energy_block"
+    ]
+}

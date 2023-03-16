@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "item": "instead:fools_gold_ingot"
+      },
+      "title": "Instead Mod",
+      "description": "Welcome to Instead",
+      "background": "instead:textures/block/instone.png",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "requirements": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "instead:fools_gold_ingot"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+  

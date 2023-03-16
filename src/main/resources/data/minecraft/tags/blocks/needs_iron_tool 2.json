@@ -1,0 +1,33 @@
+{
+    "replace": false,
+    "values": [
+        "instead:saphire_block",
+        "instead:saphire_ore",
+        "instead:instone_coal_ore",
+        "instead:instone_iron_ore",
+        "instead:instone_gold_ore",
+        "instead:instone_redstone_ore",
+        "instead:instone_lapis_ore",
+        "instead:instone_diamond_ore",
+        "instead:instone",
+        "instead:crystal_block",
+        "instead:fools_gold_block",
+        "instead:fools_gold_ore",
+        "instead:energy_block",
+        "instead:compressed_energy_block",
+        "instead:instone_copper_ore",
+        "instead:instone_saphire_ore",
+        "instead:instone_emerald_ore",
+        "instead:instone_energy_ore",
+        "instead:stone_energy_ore",
+        "instead:deepslate_energy_ore",
+        "instead:instone_fools_gold_ore",
+        "instead:raw_fools_gold_block",
+        "instead:decayed_moss_block",
+        "instead:acid_instone",
+        "instead:acid_instone_bricks",
+        "instead:instone_bricks",
+        "instead:instone_slab",
+        "instead:instone_stair"
+    ]
+}

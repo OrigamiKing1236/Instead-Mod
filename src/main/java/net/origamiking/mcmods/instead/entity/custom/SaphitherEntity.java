@@ -16,6 +16,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
+import software.bernie.geckolib.animatable.GeoEntity;
+import software.bernie.geckolib.constant.DefaultAnimations;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.AnimatableManager;
@@ -27,19 +29,34 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 
 import java.util.EnumSet;
 
-public class SaphitherEntity extends FlyingEntity implements GeoAnimatable {
-    
-    private AnimatableInstanceCache factory = new AnimatableInstanceCache(this) {
-        @Override
-        public <T extends GeoAnimatable> AnimatableManager<T> getManagerForId(long l) {
-            return null;
-        }
-    };
+public class SaphitherEntity extends FlyingEntity implements GeoEntity {
+    private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
-    public SaphitherEntity(EntityType<? extends FlyingEntity> entityType, World world) {
-        super(entityType, world);
+    public SaphitherEntity(EntityType<? extends SaphitherEntity> type, World world) {
+        super(type, world);
     }
 
+    @Override
+    public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
+        controllers.add(new AnimationController<>(this, "idle", 5, state -> state.setAndContinue(DefaultAnimations.IDLE)));
+    }
+
+    @Override
+    public AnimatableInstanceCache getAnimatableInstanceCache() {
+        return this.cache;
+    }
+
+//    private AnimatableInstanceCache factory = new AnimatableInstanceCache(this) {
+//        @Override
+//        public <T extends GeoAnimatable> AnimatableManager<T> getManagerForId(long l) {
+//            return null;
+//        }
+//    };
+//
+//    public SaphitherEntity(EntityType<? extends FlyingEntity> entityType, World world) {
+//        super(entityType, world);
+//    }
+//
     public static DefaultAttributeContainer.Builder setAttributes() {
         return HostileEntity.createMobAttributes()
             .add(EntityAttributes.GENERIC_MAX_HEALTH, 7.0D)
@@ -47,32 +64,25 @@ public class SaphitherEntity extends FlyingEntity implements GeoAnimatable {
             .add(EntityAttributes.GENERIC_ATTACK_SPEED, 2.0f)
             .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.3f);
     }
-
+//
     @Override
     protected void initGoals() {
         this.goalSelector.add(5, new FlyRandomlyGoal(this));
         //this.goalSelector.add(1, new MeleeAttackGoal(this, 1.2D, false));
+
         this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
     }
-
-    @Override
-    public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
-
-    }
-
-    @Override
-    public AnimatableInstanceCache getAnimatableInstanceCache() {
-        return cache;
-    }
-
-    private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
-
-
-    @Override
-    public double getTick(Object o) {
-        return 0;
-    }
-
+//
+//    @Override
+//    public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
+//
+//    }
+//
+//    @Override
+//    public AnimatableInstanceCache getAnimatableInstanceCache() {
+//        return null;
+//    }
+//
     static class FlyRandomlyGoal extends Goal {
         public final SaphitherEntity saphitherEntity;
 
@@ -108,27 +118,28 @@ public class SaphitherEntity extends FlyingEntity implements GeoAnimatable {
             this.saphitherEntity.getMoveControl().moveTo(d, e, f, 1.0);
         }
     }
-
-    private <E extends GeoAnimatable> PlayState predicate(AnimationState<E> event) {
-        if (event.isMoving()) {
-            event.getController().setAnimation(RawAnimation.begin().thenPlay("animation.saphither.move"));
-            return PlayState.CONTINUE;
-        }
-
-
-        event.getController().setAnimation(RawAnimation.begin().thenPlay("animation.saphither.idle"));
-        return PlayState.CONTINUE;
-    }
-
-
-    public void registerControllers(AnimatableManager animationData) {
-        animationData.addController(new AnimationController<GeoAnimatable>(this, "controller",
-         0, this::predicate));
-    }
-
-    public AnimatableInstanceCache getFactory() {
-        return factory;
-    }
+//
+////    private <E extends GeoAnimatable> PlayState predicate(AnimationState<E> event) {
+////        if (event.isMoving()) {
+////            event.getController().setAnimation(new RawAnimation().addAnimation("animation.saphither.move", true));
+////            return PlayState.CONTINUE;
+////        }
+////
+////
+////        event.getController().setAnimation(new RawAnimation().addAnimation("animation.saphither.idle", true));
+////        return PlayState.CONTINUE;
+////    }
+//
+////    @Override
+////    public void registerControllers(AnimatableManager animationData) {
+////        animationData.addController(new AnimationController<GeoAnimatable>(this, "controller",
+////         0, this::predicate));
+////    }
+////
+////    @Override
+////    public AnimatableInstanceCache getFactory() {
+////        return factory;
+////    }
     @Override
     public boolean handleFallDamage(float fallDistance, float damageMultiplier, DamageSource damageSource) {
         return false;

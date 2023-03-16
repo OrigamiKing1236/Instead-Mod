@@ -10,7 +10,6 @@ import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.instead.Insteadmain;
 import net.origamiking.mcmods.instead.entity.custom.SaphitherEntity;
 
-
 public class ModEntities {
     public static final EntityType<SaphitherEntity> SAPHITHER = Registry.register(
             Registries.ENTITY_TYPE, new Identifier(Insteadmain.MOD_ID, "saphither"),

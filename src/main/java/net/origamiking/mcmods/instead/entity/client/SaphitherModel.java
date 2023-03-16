@@ -4,6 +4,7 @@ import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.instead.Insteadmain;
 import net.origamiking.mcmods.instead.entity.custom.SaphitherEntity;
 import software.bernie.geckolib.model.GeoModel;
+
 public class SaphitherModel extends GeoModel<SaphitherEntity> {
 
     @Override

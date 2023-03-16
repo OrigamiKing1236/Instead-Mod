@@ -122,20 +122,20 @@ publishing {
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
-//		modrinth {
-//			debugMode = true
-//			token = System.getenv("MODRINTH_TOKEN")
-//			projectId = "${project_id}"
-//			versionNumber = "${mod_version}"
-//			versionType = "release"
-//			uploadFile = remapJar
-//			gameVersions = ['1.19.3'] // Must be an array, even with only one version
-//			dependencies {
-//				// The scope can be `required`, `optional`, `incompatible`, or `embedded`
-//				embedded.project "fabric-api"
-//				embedded.project "geckolib"
-//			}
-//			syncBodyFrom = rootProject.file("README.md").text
-//		}
+		modrinth {
+			debugMode = false
+			token = System.getenv("MODRINTH_TOKEN")
+			projectId = "${project_id}"
+			versionNumber = "${mod_version}"
+			versionType = "alpha"
+			uploadFile = remapJar
+			gameVersions = ['1.19.3'] // Must be an array, even with only one version
+			dependencies {
+				// The scope can be `required`, `optional`, `incompatible`, or `embedded`
+				embedded.project "fabric-api"
+				embedded.project "geckolib"
+			}
+			syncBodyFrom = rootProject.file("README.md").text
+		}
 	}
 }
