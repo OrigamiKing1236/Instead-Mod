@@ -19,7 +19,7 @@ public class ModGroups {
     private static final ItemGroup INSTEAD_GROUP = FabricItemGroup.builder(new Identifier(Insteadmain.MOD_ID, "instead_group"))
             .displayName(Text.literal("Instead Blocks"))
             .icon(() -> new ItemStack(MineralBlocks.FOOLS_GOLD_BLOCK))
-            .entries((enabledFeatures, entries, operatorEnabled) -> {
+            .entries((context, entries) -> {
                 entries.add(MineralBlocks.FOOLS_GOLD_BLOCK);
                 entries.add(MineralBlocks.FOOLS_GOLD_ORE);
                 entries.add(MineralBlocks.SAPHIRE_BLOCK);
@@ -79,7 +79,7 @@ public class ModGroups {
     private static final ItemGroup INSTEAD_GROUP2 = FabricItemGroup.builder(new Identifier(Insteadmain.MOD_ID, "instead_group2"))
             .displayName(Text.literal("Instead Items"))
             .icon(() -> new ItemStack(ModItems.FOOLS_GOLD_INGOT))
-            .entries((enabledFeatures, entries, operatorEnabled) -> {
+            .entries((context, entries) -> {
                 entries.add(ModItems.FOOLS_GOLD_INGOT);
                 entries.add(ModItems.RAW_FOOLS_GOLD);
                 entries.add(ModItems.FOOLS_GOLD_NUGGET);

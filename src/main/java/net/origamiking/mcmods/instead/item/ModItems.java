@@ -26,10 +26,10 @@ public class ModItems {
     public static final Item SAPHIRE_AXE = registerItem("saphire_axe", new AxeItem(ModToolMaterial.SAPHIRE, 4, 0.5f,new FabricItemSettings()));
     public static final Item SAPHIRE_HOE = registerItem("saphire_hoe", new HoeItem(ModToolMaterial.SAPHIRE, 2, 2f,new FabricItemSettings()));
 
-    public static final Item SAPHIRE_HELMET = registerItem("saphire_helmet", new ArmorItem(ModArmorMaterial.SAPHIRE, EquipmentSlot.HEAD,new FabricItemSettings()));
-    public static final Item SAPHIRE_CHESTPLATE = registerItem("saphire_chestplate", new ArmorItem(ModArmorMaterial.SAPHIRE, EquipmentSlot.CHEST,new FabricItemSettings()));
-    public static final Item SAPHIRE_LEGGINGS = registerItem("saphire_leggings", new ArmorItem(ModArmorMaterial.SAPHIRE, EquipmentSlot.LEGS,new FabricItemSettings()));
-    public static final Item SAPHIRE_BOOTS = registerItem("saphire_boots", new ArmorItem(ModArmorMaterial.SAPHIRE, EquipmentSlot.FEET,new FabricItemSettings()));
+    public static final Item SAPHIRE_HELMET = registerItem("saphire_helmet", new ArmorItem(ModArmorMaterial.SAPHIRE, ArmorItem.Type.HELMET,new FabricItemSettings()));
+    public static final Item SAPHIRE_CHESTPLATE = registerItem("saphire_chestplate", new ArmorItem(ModArmorMaterial.SAPHIRE, ArmorItem.Type.CHESTPLATE,new FabricItemSettings()));
+    public static final Item SAPHIRE_LEGGINGS = registerItem("saphire_leggings", new ArmorItem(ModArmorMaterial.SAPHIRE, ArmorItem.Type.LEGGINGS,new FabricItemSettings()));
+    public static final Item SAPHIRE_BOOTS = registerItem("saphire_boots", new ArmorItem(ModArmorMaterial.SAPHIRE, ArmorItem.Type.BOOTS,new FabricItemSettings()));
     public static final Item INWOOD_APPLE = registerItem("inwood_apple", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(2).saturationModifier(4f).build())));
 
 

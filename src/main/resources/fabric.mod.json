@@ -9,8 +9,9 @@
 		"OrigamiKing1236"
 	],
 	"contact": {
-		"homepage": "mod.origamiking.net",
-		"sources": ""
+		"homepage": "https://mod.origamiking.net",
+		"sources": "https://github.com/OrigamiKing3612/Instead-Mod",
+		"issues": "https://github.com/OrigamiKing3612/Instead-Mod/issues"
 	},
 	"license": "Apache-2.0",
 	"icon": "assets/instead/icon.png",
@@ -43,5 +44,15 @@
 	},
 	"suggests": {
 		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.website": "https://mods.origamiking.net",
+				"modmenu.modrinth": "https://modrinth.com/mod/instead-mod"
+			},
+			"badges": [],
+			"update_checker": true
+		}
 	}
 }
