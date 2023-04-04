@@ -16,7 +16,6 @@ limitations under the License.
 package net.origamiking.mcmods.instead.items;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -60,16 +59,16 @@ public class ModItems {
     
 public static void registerModItems() {
         Insteadmain.LOGGER.info("Starting Items for instead");
-        Registry.register(Registries.ITEM, new Identifier("instead", "fools_gold_ingot"), ModItems.FOOLS_GOLD_INGOT);
-    Registry.register(Registries.ITEM, new Identifier("instead", "saphire_gem"), ModItems.SAPHIRE_GEM);
-    Registry.register(Registries.ITEM, new Identifier("instead", "raw_fools_gold"), ModItems.RAW_FOOLS_GOLD);
-    Registry.register(Registries.ITEM, new Identifier("instead", "energy_ingot"), ModItems.ENERGY_INGOT);
-    Registry.register(Registries.ITEM, new Identifier("instead", "living_energy_star"), ModItems.LIVING_ENERGY_STAR);
-    Registry.register(Registries.ITEM, new Identifier("instead", "saphire_rod"), ModItems.SAPHIRE_ROD);
-    Registry.register(Registries.ITEM, new Identifier("instead", "malachite_nugget"), ModItems.MALACHITE_NUGGET);
-    Registry.register(Registries.ITEM, new Identifier("instead", "fools_gold_nugget"), ModItems.FOOLS_GOLD_NUGGET);
-    //Registry.register(Registry.ITEM, new Identifier("instead", "saphire_pickaxe"), ModItems.SAPHIRE_PICKAXE);
-    Registry.register(Registries.ITEM, new Identifier("instead", "crystal_powder"), ModItems.CRYSTAL_POWDER);
-    Registry.register(Registries.ITEM, new Identifier("instead", "saphither_spawn_egg"), ModItems.SAPHITHER_SPAWN_EGG);
+    Registry.register(Registries.ITEM, new Identifier(Insteadmain.MOD_ID, "fools_gold_ingot"), ModItems.FOOLS_GOLD_INGOT);
+    Registry.register(Registries.ITEM, new Identifier(Insteadmain.MOD_ID, "saphire_gem"), ModItems.SAPHIRE_GEM);
+    Registry.register(Registries.ITEM, new Identifier(Insteadmain.MOD_ID, "raw_fools_gold"), ModItems.RAW_FOOLS_GOLD);
+    Registry.register(Registries.ITEM, new Identifier(Insteadmain.MOD_ID, "energy_ingot"), ModItems.ENERGY_INGOT);
+    Registry.register(Registries.ITEM, new Identifier(Insteadmain.MOD_ID, "living_energy_star"), ModItems.LIVING_ENERGY_STAR);
+    Registry.register(Registries.ITEM, new Identifier(Insteadmain.MOD_ID, "saphire_rod"), ModItems.SAPHIRE_ROD);
+    Registry.register(Registries.ITEM, new Identifier(Insteadmain.MOD_ID, "malachite_nugget"), ModItems.MALACHITE_NUGGET);
+    Registry.register(Registries.ITEM, new Identifier(Insteadmain.MOD_ID, "fools_gold_nugget"), ModItems.FOOLS_GOLD_NUGGET);
+//    Registry.register(Registries.ITEM, new Identifier(Insteadmain.MOD_ID, "saphire_pickaxe"), ModItems.SAPHIRE_PICKAXE);
+    Registry.register(Registries.ITEM, new Identifier(Insteadmain.MOD_ID, "crystal_powder"), ModItems.CRYSTAL_POWDER);
+    Registry.register(Registries.ITEM, new Identifier(Insteadmain.MOD_ID, "saphither_spawn_egg"), ModItems.SAPHITHER_SPAWN_EGG);
     }
 }

@@ -1,31 +1,32 @@
 {
-    "temperature": 0.8,
-    "downfall": 0.4,
-    "precipitation": "none",
-    "temperature_modifier": "frozen",
-    "effects": {
-      "sky_color": 7907327,
-      "fog_color": 12638463,
-      "water_color": 167680,
-      "water_fog_color": 3635712,
-      "grass_color": 0
-    },
-    "spawners": {
-      "monster": [
-        {
-          "type": "instead:saphither",
-          "weight": 3,
-          "minCount": 1,
-          "maxCount": 10
-        }
-      ]
-    },
-    "spawn_costs": {},
-    "carvers": {
-      "liquid": [
-        "minecraft:cave"
-      ]
-    },
-    "features": []
-  }
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "precipitation": "none",
+  "temperature_modifier": "frozen",
+  "effects": {
+    "sky_color": 7907327,
+    "fog_color": 12638463,
+    "water_color": 167680,
+    "water_fog_color": 3635712,
+    "grass_color": 0
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "instead:saphither",
+        "weight": 3,
+        "minCount": 1,
+        "maxCount": 10
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "liquid": [
+      "minecraft:cave"
+    ]
+  },
+  "features": []
+}
   

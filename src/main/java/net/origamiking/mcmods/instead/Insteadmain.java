@@ -14,11 +14,12 @@ import net.origamiking.mcmods.instead.blocks.ModBlocks;
 import net.origamiking.mcmods.instead.entity.ModEntities;
 import net.origamiking.mcmods.instead.entity.custom.SaphitherEntity;
 import net.origamiking.mcmods.instead.group.ModGroups;
-import net.origamiking.mcmods.instead.item.ModItems;
+import net.origamiking.mcmods.instead.items.ModItems;
 import net.origamiking.mcmods.instead.painting.ModPaintings;
 import net.origamiking.mcmods.instead.tag.ModBlockTags;
 import net.origamiking.mcmods.instead.util.ModFlammableBlocks;
 import net.origamiking.mcmods.instead.util.ModStrippableBlocks;
+import net.origamiking.mcmods.instead.world.dimension.ModDimensions;
 import net.origamiking.mcmods.instead.world.feature.ModConfiguredFeatures;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,8 +37,9 @@ public class Insteadmain implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Staring Instead");
 		ModConfiguredFeatures.registerConfiguredFeatures();//this must be first
+		ModDimensions.register();
 		ModBlocks.registerBlocks();
-		ModItems.registerItems();
+		ModItems.registerModItems();
 		ModGroups.registerGroups();
 		ModFlammableBlocks.registerFlammableBlocks();
 		ModStrippableBlocks.registerStrippables();

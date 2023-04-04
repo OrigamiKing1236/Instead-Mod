@@ -76,11 +76,9 @@ dependencies {
 
 	modImplementation "maven.modrinth:P3sjMa3U:${origamikings_api}"
 
-//	modImplementation 'net.kyrptonaught:customportalapi:V0.0.1-BETA60-1.19.3'
-//	include 'net.kyrptonaught:customportalapi:V0.0.1-BETA60-1.19.3'
+	modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta62-1.19'
+	include 'net.kyrptonaught:customportalapi:0.0.1-beta62-1.19'
 
-//	modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta56-1.19'
-//	include 'net.kyrptonaught:customportalapi:0.0.1-beta56-1.19'
 
 }
 

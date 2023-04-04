@@ -12,8 +12,7 @@ import net.origamiking.mcmods.instead.blocks.minerals.MineralBlocks;
 import net.origamiking.mcmods.instead.blocks.other.OtherBlocks;
 import net.origamiking.mcmods.instead.blocks.woods.inwood.InwoodBlocks;
 import net.origamiking.mcmods.instead.blocks.woods.petrified.PetrifiedBlocks;
-import net.origamiking.mcmods.instead.fluid.ModFluids;
-import net.origamiking.mcmods.instead.item.ModItems;
+import net.origamiking.mcmods.instead.items.ModItems;
 
 public class ModGroups {
     private static final ItemGroup INSTEAD_GROUP = FabricItemGroup.builder(new Identifier(Insteadmain.MOD_ID, "instead_group"))
